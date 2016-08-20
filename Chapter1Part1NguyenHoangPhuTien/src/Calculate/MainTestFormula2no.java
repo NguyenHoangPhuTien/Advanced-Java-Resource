@@ -1,11 +1,10 @@
-package MainTest;
+package Calculate;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.InputMismatchException;
 
-import Calculate.Forumula2no;
 import Equation.LinearEquation;
 
 public class MainTestFormula2no {
