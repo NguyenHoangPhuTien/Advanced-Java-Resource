@@ -17,7 +17,8 @@ public class Trooper extends Solider{
 	public Trooper(String name, int power, String weapon) {
 		super(name, power, weapon);
 	}
-
+	
+	
 	/*
 	 * Show information of infantryman.
 	 * Return result as String type.

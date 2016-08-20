@@ -37,6 +37,8 @@ public class MainGameSoliderTest {
 					System.out.println(infi.toString());
 					System.out.println(troop.toString());
 					
+					int healInfi = 0;
+					int healTroop = 0;
 					int cont = 1;
 					while (cont == 1){
 						
@@ -54,12 +56,15 @@ public class MainGameSoliderTest {
 							default:
 								System.out.println("Please choice 1 or 2");
 						}
-						int healInfi = infi.getPower();
-						int healTroop = troop.getPower();
+						healInfi = infi.getPower();
+						healTroop = troop.getPower();
 						if(healInfi <= 0 || healTroop <= 0)
 							cont = 0;
 					}
-					
+					if(healInfi <= 0)
+						System.out.println("Trooper is winner");
+					else
+						System.out.println("Infantryman is winner");
 				}
 			}
 		} catch (IOException | InputMismatchException | NumberFormatException e) {
