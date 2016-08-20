@@ -3,6 +3,7 @@ package ManagerCD;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class MainInformationCDTest {
@@ -14,6 +15,7 @@ public class MainInformationCDTest {
 		
 		
 		try {
+			CD[] listCD = new CD[0];
 			String cont = "yes";
 			while (cont.equals("yes") || cont.equals("y")){
 				System.out.println("Input code of CD: ");
@@ -33,13 +35,17 @@ public class MainInformationCDTest {
 						System.out.println("Price of CD can not be less or equal 0");
 					else{
 						CD cd = new CD(code, name, singer, number, price);
-						System.out.println("Information of CD: "+ cd.toString());
+						listCD = Arrays.copyOf(listCD, listCD.length + 1);
+						listCD[listCD.length - 1] = cd;
 					}
 				}
 				System.out.println("Do you want to continue ? (yes/no)");
 				cont = buff.readLine().toLowerCase();
 			}
 			
+			for(CD cd : listCD){
+				System.out.println("Information of CD: "+cd.toString());
+			}
 			
 		} catch (IOException | NumberFormatException | InputMismatchException e) {
 			e.printStackTrace();
