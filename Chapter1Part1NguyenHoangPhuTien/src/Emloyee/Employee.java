@@ -8,7 +8,7 @@ public class Employee implements iSalary{
 	 * Author : Nguyen Hoang Phu Tien.
 	 * Date : 19/8/2016.
 	 * Version : 1.
-	 * Class of employee.
+	 * Class information of employee.
 	 */
 	
 	String name;
