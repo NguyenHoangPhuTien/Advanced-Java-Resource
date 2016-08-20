@@ -1,4 +1,4 @@
-package UnitTest;
+package GameWarUnitAndTestSuite;
 
 import static org.junit.Assert.*;
 

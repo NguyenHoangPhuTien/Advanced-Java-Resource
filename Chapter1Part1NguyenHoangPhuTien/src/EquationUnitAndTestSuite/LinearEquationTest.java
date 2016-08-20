@@ -1,4 +1,4 @@
-package UnitTest;
+package EquationUnitAndTestSuite;
 
 import static org.junit.Assert.*;
 

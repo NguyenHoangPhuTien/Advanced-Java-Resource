@@ -1,4 +1,4 @@
-package UnitTest;
+package EmployeeSalaryUnitAndTestSuite;
 
 import static org.junit.Assert.*;
 
