@@ -62,13 +62,15 @@ public class MainTestFormula2no {
 					case 4:
 						result = f2n.product();
 						System.out.println("Result of product: "+result);
-						System.out.println("Want to continue?");
-						System.out.println("1.Continue");
-						System.out.println("2.Quit");
-						System.out.println("Please choice(1/2");
-						choice = Integer.parseInt(buff.readLine());
 						break;
+					default:
+						System.out.println("Please choice 1 or 2 or 3 or 4");
 				}
+				System.out.println("Want to continue?");
+				System.out.println("1.Continue");
+				System.out.println("2.Quit");
+				System.out.println("Please choice(1/2");
+				cont = Integer.parseInt(buff.readLine());
 			}
 		} catch (NumberFormatException | IOException | InputMismatchException 
 				| ArithmeticException e) {

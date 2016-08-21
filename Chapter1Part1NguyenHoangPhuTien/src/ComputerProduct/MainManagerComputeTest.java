@@ -12,7 +12,6 @@ public class MainManagerComputeTest {
 		
 		BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
 		
-		
 		try {
 			String numberProduct = "";
 			double price = 0;
@@ -83,8 +82,7 @@ public class MainManagerComputeTest {
 								}
 								break;
 							default:
-								System.out.println("Please choice 1 or 2");
-								
+								System.out.println("Please choice 1 or 2");	
 						}
 						System.out.println("Continue ?(1/2)");
 						int choice1 = Integer.parseInt(buff.readLine());

@@ -21,7 +21,7 @@ public class Forumula2no implements iCalculate {
 		this.a = a;
 		this.b = b;
 	}
-
+    	
 	public double getA() {
 		return a;
 	}
