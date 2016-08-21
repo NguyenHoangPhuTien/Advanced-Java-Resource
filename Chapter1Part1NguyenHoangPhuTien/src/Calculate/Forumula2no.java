@@ -2,6 +2,13 @@ package Calculate;
 
 public class Forumula2no implements iCalculate {
 
+	/*
+	 * Author : Nguyen Hoang Phu Tien.
+	 * Date : 19/8/2016.
+	 * Version : 1.
+	 * Class about operation of 2 numbers.
+	 */
+	
 	double a;
 	double b;
 
