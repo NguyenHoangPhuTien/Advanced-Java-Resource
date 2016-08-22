@@ -27,6 +27,30 @@ public class CollectionEmployee extends Employee{
 		this.rateBonusSalary = rateBonusSalary;
 	}
 
+	public int getQuantityProduct() {
+		return quantityProduct;
+	}
+
+	public void setQuantityProduct(int quantityProduct) {
+		this.quantityProduct = quantityProduct;
+	}
+
+	public int getLimitProduct() {
+		return limitProduct;
+	}
+
+	public void setLimitProduct(int limitProduct) {
+		this.limitProduct = limitProduct;
+	}
+
+	public double getRateBonusSalary() {
+		return rateBonusSalary;
+	}
+
+	public void setRateBonusSalary(double rateBonusSalary) {
+		this.rateBonusSalary = rateBonusSalary;
+	}
+
 	/*
 	 * Get full information of collection employee.
 	 * Return result as a string type.

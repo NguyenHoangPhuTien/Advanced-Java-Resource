@@ -82,7 +82,10 @@ public class Employee implements iSalary{
 	public double findTaxableIncome() {
 		
 		double taxableIncome = this.findIncome() - DEFAULT_1 - this.getNumOfDepend() * DEFAULT_2;
-		return taxableIncome;
+		if(taxableIncome < 0)
+			return 0;
+		else
+			return taxableIncome;
 	}
 
 	/*
@@ -92,36 +95,39 @@ public class Employee implements iSalary{
 	@Override
 	public double findPersonalIncomeTax() {
 		
-		double taxIncome = this.findTaxableIncome();
-		double result = 0;
 		
-		if(taxIncome < EnumRateTax.LEVEL1.getRangeTax())
-			result = taxIncome * EnumRateTax.LEVEL1.getSalaryTax();
-		else if(taxIncome < EnumRateTax.LEVEL2.getRangeTax())
-			result = (taxIncome - EnumRateTax.LEVEL1.getRangeTax()) * EnumRateTax.LEVEL2.getSalaryTax()
-						+ EnumRateTax.LEVEL1.getMaxOfTax();
-		else if(taxIncome < EnumRateTax.LEVEL3.getRangeTax())
-			result = (taxIncome - EnumRateTax.LEVEL2.getRangeTax()) * EnumRateTax.LEVEL3.getSalaryTax()
-						+ EnumRateTax.LEVEL2.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax();
-		else if(taxIncome < EnumRateTax.LEVEL4.getRangeTax())
-			result = (taxIncome - EnumRateTax.LEVEL3.getRangeTax()) * EnumRateTax.LEVEL4.getSalaryTax()
-						+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax()
-						+ EnumRateTax.LEVEL1.getMaxOfTax();
-		else if(taxIncome < EnumRateTax.LEVEL5.getRangeTax())
-			result = (taxIncome - EnumRateTax.LEVEL4.getRangeTax()) * EnumRateTax.LEVEL5.getSalaryTax()
-						+ EnumRateTax.LEVEL4.getMaxOfTax() + EnumRateTax.LEVEL3.getMaxOfTax()
-						+ EnumRateTax.LEVEL2.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax();
-		else if(taxIncome < EnumRateTax.LEVEL6.getRangeTax())
-			result = (taxIncome - EnumRateTax.LEVEL5.getRangeTax()) * EnumRateTax.LEVEL6.getSalaryTax()
-						+ EnumRateTax.LEVEL5.getMaxOfTax() + EnumRateTax.LEVEL4.getMaxOfTax()
-						+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax()
-						+ EnumRateTax.LEVEL1.getMaxOfTax();
-		else
-			result = (taxIncome - EnumRateTax.LEVEL7.getRangeTax()) * EnumRateTax.LEVEL7.getSalaryTax()
-						+ EnumRateTax.LEVEL6.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax()
-						+ EnumRateTax.LEVEL5.getMaxOfTax() + EnumRateTax.LEVEL4.getMaxOfTax()
-						+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax();
-						
+		double result = 0;
+		double taxIncome = this.findTaxableIncome();
+		if(taxIncome > 0){
+			if(taxIncome < EnumRateTax.LEVEL1.getRangeTax())
+				result = taxIncome * EnumRateTax.LEVEL1.getSalaryTax();
+			else if(taxIncome < EnumRateTax.LEVEL2.getRangeTax())
+				result = (taxIncome - EnumRateTax.LEVEL1.getRangeTax()) * EnumRateTax.LEVEL2.getSalaryTax()
+							+ EnumRateTax.LEVEL1.getMaxOfTax();
+			else if(taxIncome < EnumRateTax.LEVEL3.getRangeTax())
+				result = (taxIncome - EnumRateTax.LEVEL2.getRangeTax()) * EnumRateTax.LEVEL3.getSalaryTax()
+							+ EnumRateTax.LEVEL2.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax();
+			else if(taxIncome < EnumRateTax.LEVEL4.getRangeTax())
+				result = (taxIncome - EnumRateTax.LEVEL3.getRangeTax()) * EnumRateTax.LEVEL4.getSalaryTax()
+							+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax()
+							+ EnumRateTax.LEVEL1.getMaxOfTax();
+			else if(taxIncome < EnumRateTax.LEVEL5.getRangeTax())
+				result = (taxIncome - EnumRateTax.LEVEL4.getRangeTax()) * EnumRateTax.LEVEL5.getSalaryTax()
+							+ EnumRateTax.LEVEL4.getMaxOfTax() + EnumRateTax.LEVEL3.getMaxOfTax()
+							+ EnumRateTax.LEVEL2.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax();
+			else if(taxIncome < EnumRateTax.LEVEL6.getRangeTax())
+				result = (taxIncome - EnumRateTax.LEVEL5.getRangeTax()) * EnumRateTax.LEVEL6.getSalaryTax()
+							+ EnumRateTax.LEVEL5.getMaxOfTax() + EnumRateTax.LEVEL4.getMaxOfTax()
+							+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax()
+							+ EnumRateTax.LEVEL1.getMaxOfTax();
+			else
+				result = (taxIncome - EnumRateTax.LEVEL7.getRangeTax()) * EnumRateTax.LEVEL7.getSalaryTax()
+							+ EnumRateTax.LEVEL6.getMaxOfTax() + EnumRateTax.LEVEL1.getMaxOfTax()
+							+ EnumRateTax.LEVEL5.getMaxOfTax() + EnumRateTax.LEVEL4.getMaxOfTax()
+							+ EnumRateTax.LEVEL3.getMaxOfTax() + EnumRateTax.LEVEL2.getMaxOfTax();
+							
+		}
+		
 		return result;
 	}
 

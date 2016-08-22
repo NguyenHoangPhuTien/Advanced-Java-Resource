@@ -76,6 +76,21 @@ public class MainTestAllEmployee {
 			if(listTrade.length > 0){
 				for(TradeEmployee trade : listTrade){
 					System.out.println(trade.toString());
+					System.out.println(String.format("Income: %.2f", trade.findIncome()));
+					System.out.println("Taxable income: " + trade.findTaxableIncome());
+					System.out.println("Personal income tax: " + trade.findPersonalIncomeTax());
+					System.out.println(String.format("Real earning: %.2f", trade.findRealEarning()));
+					System.out.println("Bonus salary: " + trade.findBonusSalary());
+				}
+			}
+			if(listCollect.length > 0){
+				for(CollectionEmployee collect : listCollect){
+					System.out.println(collect.toString());
+					System.out.println(String.format("Income: %.2f", collect.findIncome()));
+					System.out.println("Taxable income: " + collect.findTaxableIncome());
+					System.out.println("Personal income tax: " + collect.findPersonalIncomeTax());
+					System.out.println(String.format("Real earning: %.2f", collect.findRealEarning()));
+					System.out.println("Bonus salary: " + collect.findBonusSalary());
 				}
 			}
 			

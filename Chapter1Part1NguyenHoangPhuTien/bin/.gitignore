@@ -8,13 +8,12 @@
 /GameWarUnitAndTestSuite/
 /Geometry/
 /GeometryUnitAndTestSuite/
+/ManagerBank/
 /ManagerCD/
+/ManagerLibrary/
+/ManagerLibraryUnitAndTestSuite/
 /ManagerSchool/
 /OperationUnitAndTestSuite/
 /Test.class
-/WarGame/
-/Transaction/
-/ManagerBank/
 /TransactionUnitAndTestSuite/
-/ManagerLibrary/
-/ManagerLibraryUnitAndTestSuite/
+/WarGame/

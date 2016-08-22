@@ -24,6 +24,22 @@ public class TradeEmployee extends Employee{
 		this.rateSalary = rateSalary;
 	}
 
+	public double getTradeSalary() {
+		return tradeSalary;
+	}
+
+	public void setTradeSalary(double tradeSalary) {
+		this.tradeSalary = tradeSalary;
+	}
+
+	public double getRateSalary() {
+		return rateSalary;
+	}
+
+	public void setRateSalary(double rateSalary) {
+		this.rateSalary = rateSalary;
+	}
+
 	/*
 	 * Get full information of trade employee.
 	 * Return result as a string type.
