@@ -66,11 +66,11 @@ public class Money extends Transaction{
 	
 	public void setPriceBuy(int type) {
 		if(type == 1)
-			priceBuy = TransactionMoney.USD.getPriceSell();
+			priceBuy = TransactionMoney.USD.getPriceBuy();
 		else if(type == 2)
-			priceBuy = TransactionMoney.EUR.getPriceSell();
+			priceBuy = TransactionMoney.EUR.getPriceBuy();
 		else if(type == 3)
-			priceBuy = TransactionMoney.AUD.getPriceSell();
+			priceBuy = TransactionMoney.AUD.getPriceBuy();
 	}
 	
 	/*

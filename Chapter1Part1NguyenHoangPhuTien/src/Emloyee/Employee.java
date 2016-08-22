@@ -1,16 +1,15 @@
 package Emloyee;
 import java.text.DecimalFormat;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class information of employee.
+ */
 
 public class Employee implements iSalary{
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class information of employee.
-	 */
-	
 	String name;
 	double coefSalary;
 	int numOfDepend; // Number person depend 
@@ -18,8 +17,6 @@ public class Employee implements iSalary{
 	final double BASESALARY = 1260000;
 	final double DEFAULT_1 = 9000000;
 	final double DEFAULT_2 = 3600000;
-	
-	DecimalFormat df = new DecimalFormat("#.000");
 	
 	public Employee() {
 		super();

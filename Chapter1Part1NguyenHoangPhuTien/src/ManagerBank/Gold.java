@@ -60,7 +60,7 @@ public class Gold extends Transaction{
 				money = TransactionGold.SJC9999.calMoney(quantity);
 				break;
 			case 2:
-				money = TransactionGold.G24K.calMoney(money);
+				money = TransactionGold.G24K.calMoney(quantity);
 				break;				
 		}
 		return money;
