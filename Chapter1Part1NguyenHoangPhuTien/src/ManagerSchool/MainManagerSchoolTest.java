@@ -17,8 +17,6 @@ public class MainManagerSchoolTest {
 		
 		try {
 			int cont = 1;
-			Manager managerTeacher = new Manager();
-			Manager managerStudent = new Manager();
 			Teacher[] listTeacher = new Teacher[0];
 			Student[] listStudent = new Student[0];
 			while(cont == 1){
@@ -81,15 +79,19 @@ public class MainManagerSchoolTest {
 				}
 				System.out.println("Continue ? (1/2)");
 				int choose = Integer.parseInt(buff.readLine());
-				if(choice != 1)
+				if(choose != 1)
 					cont = 0;
 			}
-			managerTeacher.setListClass(listTeacher);
-			managerStudent.setListClass(listStudent);
-			if(managerTeacher.findSize() > 0){
-				
+			if(listTeacher.length > 0){
+				for(Teacher teacher : listTeacher){
+					System.out.println(teacher.toString());
+				}
+					
 			}
-			
+			if(listStudent.length > 0)
+				for(Student student : listStudent)
+					System.out.println(student.toString());
+				
 		} catch (IOException | NumberFormatException | InputMismatchException e) {
 			System.out.println(e.getMessage());
 		}

@@ -1,6 +1,6 @@
 package ManagerSchool;
 
-public class Teacher extends Human implements iClass{
+public class Teacher extends Human{
 
 	/*
 	 * Author : Nguyen Hoang Phu Tien.

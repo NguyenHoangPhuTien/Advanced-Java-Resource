@@ -1,3 +1,11 @@
+/Calculate/
+/ComputerProduct/
+/ComputerUnitAndTestSuite/
+/Emloyee/
+/EmployeeSalaryUnitAndTestSuite/
+/Equation/
+/EquationUnitAndTestSuite/
+/GameWarUnitAndTestSuite/
 /Geometry/
 /GeometryUnitAndTestSuite/
 /ManagerCD/
@@ -5,5 +13,5 @@
 /OperationUnitAndTestSuite/
 /Test.class
 /WarGame/
-/Calculate/
-/ComputerProduct/
+/Transaction/
+/ManagerBank/

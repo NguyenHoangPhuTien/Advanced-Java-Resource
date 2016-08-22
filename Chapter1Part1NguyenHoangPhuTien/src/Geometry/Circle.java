@@ -73,7 +73,4 @@ public class Circle implements iPeremiter, iArea{
 		return perimeter;
 		
 	}
-	
-	
-
 }
