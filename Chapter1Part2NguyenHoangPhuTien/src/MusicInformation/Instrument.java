@@ -6,7 +6,7 @@ package MusicInformation;
  * Version 1.0.
  */
 
-public abstract class Instrument {
+public abstract class Instrument{
 
 	String name;
 	String manufacturer;
