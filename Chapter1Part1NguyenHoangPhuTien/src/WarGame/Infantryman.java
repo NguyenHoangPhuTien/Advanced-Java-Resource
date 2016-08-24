@@ -1,15 +1,16 @@
 package WarGame;
 
+
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 20/8/2016.
+ * Version : 1.
+ * Description of infantryman.
+ * This class extends by class Solider.
+ */
+
 public class Infantryman extends Solider{
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 20/8/2016.
-	 * Version : 1.
-	 * Description of infantryman.
-	 * This class extends by class Solider.
-	 */
-	
 	public Infantryman() {
 		super();
 		

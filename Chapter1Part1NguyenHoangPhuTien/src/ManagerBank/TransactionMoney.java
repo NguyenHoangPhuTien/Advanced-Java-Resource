@@ -1,5 +1,12 @@
 package ManagerBank;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 22/8/2016.
+ * Version : 1.0.
+ * Enum include price of type Money.
+ */
+
 public enum TransactionMoney {
 
 	USD(22250, 22335),

@@ -31,6 +31,10 @@ public class MainTestFormula2no {
 				System.out.println("4.Product");
 				System.out.println("Please choice option(1/2/3/4)");
 				choice = Integer.parseInt(buff.readLine());
+				
+				/*
+				 * With choice : method corresponding will be call 
+				 */
 				switch (choice){
 					case 1:
 						result = f2n.plus();
@@ -66,6 +70,10 @@ public class MainTestFormula2no {
 					default:
 						System.out.println("Please choice 1 or 2 or 3 or 4");
 				}
+				/*
+				 * 
+				 */
+				
 				System.out.println("Want to continue?");
 				System.out.println("1.Continue");
 				System.out.println("2.Quit");

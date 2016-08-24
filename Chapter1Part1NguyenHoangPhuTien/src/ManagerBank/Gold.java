@@ -1,15 +1,15 @@
 package ManagerBank;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 21/8/2016.
+ * Version : 1.0.
+ * Class about information transaction by gold.
+ * This class extend by Transaction class.
+ */
+
 public class Gold extends Transaction{
 	
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 21/8/2016.
-	 * Version : 1.0.
-	 * Class about information transaction by gold.
-	 * This class extend by Transaction class.
-	 */
-
 	String type;
 
 	public Gold() {

@@ -1,15 +1,15 @@
 package ManagerSchool;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 21/8/2016.
+ * Version : 1.
+ * Class about information of Teacher.
+ * This class extend by Human class.
+ */
+
 public class Teacher extends Human{
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 21/8/2016.
-	 * Version : 1.
-	 * Class about information of Teacher.
-	 * This class extend by Human class.
-	 */
-	
 	double coefSalary;
 	double bonusSalary;
 	String leaderClass;

@@ -1,15 +1,15 @@
 package WarGame;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 20/8/2016.
+ * Version : 1.
+ * Description of trooper.
+ * This class extends by class Solider.
+ */
+
 public class Trooper extends Solider{
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 20/8/2016.
-	 * Version : 1.
-	 * Description of trooper.
-	 * This class extends by class Solider.
-	 */
-	
 	public Trooper() {
 		super();
 	}

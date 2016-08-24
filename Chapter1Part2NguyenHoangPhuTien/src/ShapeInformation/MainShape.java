@@ -18,6 +18,9 @@ public class MainShape {
 			System.out.println("3.Square");
 			System.out.println("Please choice 1 or 2 or 3");
 			int choice = Integer.parseInt(buff.readLine());
+			/*
+			 * With choice : class corressponding will be create and call method find perimeter and area.
+			 */
 			switch(choice){
 				case 1:
 					System.out.println("Input radius");
@@ -45,6 +48,9 @@ public class MainShape {
 				default:
 					System.out.println("Please choice 1 or 2 or 3");
 			}
+			/*
+			 */
+			
 		} catch (NumberFormatException | IOException | InputMismatchException e) {
 			
 			System.out.println(e.getMessage());

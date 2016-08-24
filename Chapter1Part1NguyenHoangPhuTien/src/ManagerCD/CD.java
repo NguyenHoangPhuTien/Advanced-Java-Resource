@@ -1,14 +1,14 @@
 package ManagerCD;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class information of CD.
+ */
+
 public class CD {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class information of CD.
-	 */
-	
 	String codeCD;
 	String nameCD;
 	String singer;

@@ -22,6 +22,9 @@ public class MainInstrument {
 			System.out.println("2.Non Stringed Instrument");
 			System.out.println("Please choice 1 or 2");
 			int choice = Integer.parseInt(buff.readLine());
+			/*
+			 * With choice : class corresponding will be create with fields and call method play. 
+			 */
 			switch(choice){
 				case 1:
 					System.out.println("Input quantity Stringed: ");
@@ -38,6 +41,10 @@ public class MainInstrument {
 				default:
 					System.out.println("Please choice 1 or 2");
 			}
+			/*
+			 * 
+			 */
+			
 		} catch (IOException | InputMismatchException | NumberFormatException e) {
 			System.out.println(e.getMessage());
 		}

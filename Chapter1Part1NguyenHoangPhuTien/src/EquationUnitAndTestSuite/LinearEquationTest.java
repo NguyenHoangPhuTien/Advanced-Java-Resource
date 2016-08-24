@@ -16,7 +16,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(0);
 		double ac = le.findRoot();
-		double ex = 999999;
+		double ex = Double.MAX_VALUE;
 		assertEquals(ex, ac,0);
 	}
 	
@@ -26,7 +26,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(1);
 		double ac = le.findRoot();
-		double ex = -999999;
+		double ex = Double.MIN_VALUE;
 		assertEquals(ex, ac,0);
 	}
 	
@@ -36,7 +36,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(-2);
 		double ac = le.findRoot();
-		double ex = -999999;
+		double ex = Double.MIN_VALUE;
 		assertEquals(ex, ac,0);
 	}
 
@@ -69,7 +69,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(0);
 		double ac = le.findRoot();
-		double ex = -999999;
+		double ex = Double.MIN_VALUE;
 		assertEquals(ex, ac,0);
 	}
 
@@ -79,7 +79,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(-1);
 		double ac = le.findRoot();
-		double ex = 999999;
+		double ex = Double.MAX_VALUE;
 		assertEquals(ex, ac,0);
 	}
 
@@ -89,7 +89,7 @@ public class LinearEquationTest {
 		le.setA(0);
 		le.setB(-2);
 		double ac = le.findRoot();
-		double ex = 999999;
+		double ex = Double.MAX_VALUE;
 		assertEquals(ex, ac,0);
 	}
 	

@@ -22,9 +22,9 @@ public class MainTestLinearEquation {
 
 			double root = le.findRoot();
 
-			if (root == 999999)
+			if (root == Double.MAX_VALUE)
 				System.out.println("Result has infinity");
-			else if (root == -999999)
+			else if (root == Double.MIN_VALUE)
 				System.out.println("Result has no more");
 			else
 				System.out.println("Result has " + root);

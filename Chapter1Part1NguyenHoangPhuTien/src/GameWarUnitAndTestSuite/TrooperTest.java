@@ -6,14 +6,14 @@ import org.junit.Test;
 
 import WarGame.Trooper;
 
-public class TrooperTest {
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 20/8/2016.
+ * Version : 1.
+ * Test method fight of class Trooper.
+ */
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 20/8/2016.
-	 * Version : 1.
-	 * Test method fight of class Trooper.
-	 */
+public class TrooperTest {
 	
 	Trooper troop = new Trooper();
 	

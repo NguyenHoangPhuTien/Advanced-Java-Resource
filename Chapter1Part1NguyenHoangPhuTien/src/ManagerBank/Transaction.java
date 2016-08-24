@@ -1,14 +1,14 @@
 package ManagerBank;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 22/8/2016.
+ * Version : 1.0.
+ * Class about transaction in bank.
+ */
+
 public class Transaction {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 22/8/2016.
-	 * Version : 1.0.
-	 * Class about transaction in bank.
-	 */
-	
 	String tradingCode;
 	String day;
 	int quantity;

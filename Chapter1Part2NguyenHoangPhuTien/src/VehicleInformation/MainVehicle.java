@@ -39,6 +39,9 @@ public class MainVehicle {
 				System.out.println("2.Ship");
 				System.out.println("Please choice 1 or 2");
 				int choice = Integer.parseInt(buff.readLine());
+				/*
+				 * With choice : class corresponding will be create with fields and add into array. 
+				 */
 				switch (choice) {
 					case 1:
 						System.out.println("Input gear type: ");
@@ -74,6 +77,9 @@ public class MainVehicle {
 					default:
 						System.out.println("Please choice 1 or 2");
 				}
+				/*
+				 * 
+				 */
 				System.out.println("1.Continue");
 				System.out.println("2.Quit");
 				System.out.println("Please choice 1 or 2");

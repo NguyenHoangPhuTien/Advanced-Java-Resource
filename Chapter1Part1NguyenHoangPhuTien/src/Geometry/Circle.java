@@ -1,15 +1,14 @@
 package Geometry;
 import java.text.DecimalFormat;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class for Circle.
+ */
 
 public class Circle implements iPeremiter, iArea{
-	
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class for Circle.
-	 */
 	
 	Distance distance;
 	

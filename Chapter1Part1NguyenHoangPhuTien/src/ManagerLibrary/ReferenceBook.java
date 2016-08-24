@@ -41,6 +41,10 @@ public class ReferenceBook extends Book{
 				+ ", quantity : " + quantity + ", manufacturer : " + manufacturer;
 	}
 	
+	/*
+	 * Get moeney of reference book.
+	 * Return result as a double type.
+	 */
 	public double findMoney(){
 		
 		double money = 0;

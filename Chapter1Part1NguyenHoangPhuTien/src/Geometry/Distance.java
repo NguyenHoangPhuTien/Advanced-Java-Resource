@@ -1,14 +1,14 @@
 package Geometry;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class for get distance two coordinate.
+ */
+
 public class Distance {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class for get distance two coordinate.
-	 */
-	
 	Coordinate first;
 	Coordinate second;
 	

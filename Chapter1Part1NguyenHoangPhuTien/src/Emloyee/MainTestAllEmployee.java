@@ -39,6 +39,10 @@ public class MainTestAllEmployee {
 							System.out.println("2.Collection employee");
 							System.out.println("Please choice 1 or 2");
 							int choiceEmp = Integer.parseInt(buff.readLine());
+							
+							/*
+							 * With choice : class corresponding will be create with fields and add into corresponding array. 
+							 */
 							switch(choiceEmp){
 								case 1:
 									System.out.println("Input trade salary: ");
@@ -63,6 +67,9 @@ public class MainTestAllEmployee {
 								default:
 									System.out.println("Please choice 1 or 2");
 							}
+							/*
+							 * 
+							 */
 						}
 					}
 				System.out.println("1.Continue");	

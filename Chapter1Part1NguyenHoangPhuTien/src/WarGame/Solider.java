@@ -1,13 +1,14 @@
 package WarGame;
 
+
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 20/8/2016.
+ * Version : 1.
+ * Description of solider.
+ */
+
 public class Solider {
-	
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 20/8/2016.
-	 * Version : 1.
-	 * Description of solider.
-	 */
 	
 	String name;
 	int power;

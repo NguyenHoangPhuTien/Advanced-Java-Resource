@@ -1,13 +1,14 @@
 package Geometry;
+
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class for coordinate
+ */
+
 public class Coordinate {
 	
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class for coordinate
-	 */
-
 	int pointA;
 	int pointB;
 

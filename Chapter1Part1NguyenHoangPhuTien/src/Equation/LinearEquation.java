@@ -1,5 +1,12 @@
 package Equation;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class information of linear Equation.
+ */
+
 public class LinearEquation {
 
 	public double a;
@@ -38,9 +45,9 @@ public class LinearEquation {
 		double root = 0;
 		if (a == 0) {
 			if (b == 0)
-				root = 999999;
+				root = Double.MAX_VALUE;
 			else
-				root = -999999;
+				root = Double.MIN_VALUE;
 		} else
 			root = -b / a;
 		return root;

@@ -1,14 +1,14 @@
 package ManagerBank;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 22/8/2016.
+ * Version : 1.0.
+ * Enum include price of type gold.
+ */
+
 public enum TransactionGold {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 22/8/2016.
-	 * Version : 1.0.
-	 * Enum include price of type gold.
-	 */
-	
 	SJC9999(3550000),
 	G24K(3514100);
 	

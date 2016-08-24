@@ -1,14 +1,15 @@
 package ManagerSchool;
 
+
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 21/8/2016.
+ * Version : 1.
+ * Class about information of Human.
+ */
+
 public class Human {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 21/8/2016.
-	 * Version : 1.
-	 * Class about information of Human.
-	 */
-	
 	String name;
 	String birth;
 	String address;

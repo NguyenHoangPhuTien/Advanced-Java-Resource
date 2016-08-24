@@ -1,15 +1,15 @@
 package ManagerSchool;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 21/8/2016.
+ * Version : 1.
+ * Class about information of Student.
+ * This class extend by Human class.
+ */
+
 public class Student extends Human{
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 21/8/2016.
-	 * Version : 1.
-	 * Class about information of Student.
-	 * This class extend by Human class.
-	 */
-	
 	String nameClass;
 	double pointSemester_1;
 	double pointSemester_2;

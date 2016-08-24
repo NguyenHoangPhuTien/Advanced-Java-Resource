@@ -98,6 +98,10 @@ public class Ship extends Vehicle implements iSpeed,iGetComsumptionFuel{
 		this.time = time;
 	}
 
+	/*
+	 * Get full information of ship
+	 * Return result as a string type
+	 */
 	@Override
 	public String toString() {
 		return "Ship [weight=" + weight + ", capacity=" + capacity

@@ -1,15 +1,14 @@
 package Geometry;
 import java.text.DecimalFormat;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 19/8/2016.
+ * Version : 1.
+ * Class for Rectangle.
+ */
 
 public class Rectangle implements iPeremiter, iArea{
-	
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 19/8/2016.
-	 * Version : 1.
-	 * Class for Rectangle.
-	 */
 	
 	Coordinate A;
 	Coordinate C;

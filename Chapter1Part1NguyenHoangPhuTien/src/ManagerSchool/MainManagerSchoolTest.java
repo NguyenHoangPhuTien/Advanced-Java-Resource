@@ -33,7 +33,10 @@ public class MainManagerSchoolTest {
 				System.out.println("2.Student");
 				System.out.println("Please choice option(1 or 2");
 				choice = Integer.parseInt(buff.readLine());
-			
+				
+				/*
+				 * With choice of customer: class corresponding will be create with fields and add into corresponding array. 
+				 */
 				switch(choice){
 				
 					case 1:
@@ -77,6 +80,11 @@ public class MainManagerSchoolTest {
 						System.out.println("Please choice option 1 or 2");
 						
 				}
+				
+				/*
+				 * 
+				 */
+				
 				System.out.println("Continue ? (1/2)");
 				int choose = Integer.parseInt(buff.readLine());
 				if(choose != 1)

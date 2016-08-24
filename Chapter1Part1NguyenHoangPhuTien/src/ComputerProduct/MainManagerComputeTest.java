@@ -44,6 +44,10 @@ public class MainManagerComputeTest {
 						System.out.println("2.Laptop");
 						System.out.println("Please choice product want to import(1/2)");
 						choice = Integer.parseInt(buff.readLine());
+						
+						/*
+						 * With choice : class corresponding will be create with fields and add into corresponding array. 
+						 */
 						switch(choice){
 							case 1:
 								System.out.println("Input CPU of product: ");
@@ -84,6 +88,10 @@ public class MainManagerComputeTest {
 							default:
 								System.out.println("Please choice 1 or 2");	
 						}
+						/*
+						 * 
+						 */
+						
 						System.out.println("Continue ?(1/2)");
 						int choice1 = Integer.parseInt(buff.readLine());
 						if(choice1 != 1)

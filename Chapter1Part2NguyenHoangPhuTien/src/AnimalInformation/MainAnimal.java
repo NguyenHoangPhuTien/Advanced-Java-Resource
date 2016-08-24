@@ -32,6 +32,9 @@ public class MainAnimal {
 				System.out.println("4.Fish");
 				System.out.println("Please choice 1 or 2 or 3 or 4");
 				int choice = Integer.parseInt(buff.readLine());
+				/*
+				 * With choice : class corresponding will be create with fields and this class will be add in array 
+				 */
 				switch(choice){
 					case 1:
 						Tiger tiger = new Tiger(name, food);
@@ -56,6 +59,10 @@ public class MainAnimal {
 					default:
 						System.out.println("Please choice 1 or 2 or 3 or 4");
 				}
+				/*
+				 * 
+				 */
+				
 				System.out.println("1.Continue");
 				System.out.println("2.Quit");
 				System.out.println("Please choice 1 or 2");

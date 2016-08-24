@@ -13,6 +13,9 @@ public class MainEmployeeSalaryTest {
 
 		System.out.println("Input employee name: ");
 		try {
+			/*
+			 * class employee will be create and get income, taxable incom, personal income tax, real earning.
+			 */
 			String name = buff.readLine();
 			System.out.println("Input coefficients salary of employee: ");
 			double coefSalary = Double.parseDouble(buff.readLine());

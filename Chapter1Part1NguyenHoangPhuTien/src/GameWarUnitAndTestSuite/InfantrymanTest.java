@@ -7,14 +7,16 @@ import org.junit.Test;
 import WarGame.Infantryman;
 import WarGame.Trooper;
 
+/*
+ * Author : Nguyen Hoang Phu Tien.
+ * Date : 20/8/2016.
+ * Version : 1.
+ * Test method fight of class Infantryman.
+ */
+
 public class InfantrymanTest {
 
-	/*
-	 * Author : Nguyen Hoang Phu Tien.
-	 * Date : 20/8/2016.
-	 * Version : 1.
-	 * Test method fight of class Infantryman.
-	 */
+	
 	
 	Infantryman infi = new Infantryman();
 	

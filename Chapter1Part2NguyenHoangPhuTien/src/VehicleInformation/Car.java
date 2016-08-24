@@ -57,6 +57,10 @@ public class Car extends Vehicle implements iSpeed,iGetComsumptionFuel{
 		this.fuel = fuel;
 	}
 
+	/*
+	 * Get full information of car
+	 * Return result as a string type
+	 */
 	@Override
 	public String toString() {
 		return "Car gearType=" + gearType + ", carType=" + carType + ", name="
@@ -70,7 +74,7 @@ public class Car extends Vehicle implements iSpeed,iGetComsumptionFuel{
 	 */
 	@Override
 	public double findConsumptionFuel() {
-		return time.distance / time.time;
+		return fuel.distance / fuel.fuel;
 	}
 
 	/*
@@ -79,7 +83,8 @@ public class Car extends Vehicle implements iSpeed,iGetComsumptionFuel{
 	 */
 	@Override
 	public double getSpeed() {
-		return fuel.distance / fuel.fuel;
+		
+		return time.distance / time.time;
 	}
 
 	
