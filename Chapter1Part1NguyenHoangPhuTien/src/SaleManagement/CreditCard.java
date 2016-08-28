@@ -21,8 +21,8 @@ public class CreditCard extends Card implements IAuthMethod, ITypeForPay {
 	}
 
 	public CreditCard(String address, String email, String identityCardNumber, String name, String phoneNumber,
-			String cardID, String dateCreated, Order m_Order, String expirationDate, double maxDebt, String type) {
-		super(address, email, identityCardNumber, name, phoneNumber, cardID, dateCreated, m_Order);
+			String cardID, String dateCreated, String expirationDate, double maxDebt, String type) {
+		super(address, email, identityCardNumber, name, phoneNumber, cardID, dateCreated);
 		this.expirationDate = expirationDate;
 		this.maxDebt = maxDebt;
 		this.type = type;

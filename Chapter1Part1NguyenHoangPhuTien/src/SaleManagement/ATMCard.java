@@ -16,8 +16,8 @@ public class ATMCard extends Card implements IAuthMethod, ITypeForPay {
 	}
 
 	public ATMCard(String address, String email, String identityCardNumber, String name, String phoneNumber,
-			String cardID, String dateCreated, Order m_Order, double balance) {
-		super(address, email, identityCardNumber, name, phoneNumber, cardID, dateCreated, m_Order);
+			String cardID, String dateCreated, double balance) {
+		super(address, email, identityCardNumber, name, phoneNumber, cardID, dateCreated);
 		this.balance = balance;
 	}
 

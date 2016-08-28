@@ -10,18 +10,17 @@ public class Card extends Information {
 
 	protected String cardID;
 	protected String dateCreated;
-	public Order m_Order;
 
 	public Card(){
 
 	}
 
 	public Card(String address, String email, String identityCardNumber, String name, String phoneNumber, String cardID,
-			String dateCreated, Order m_Order) {
+			String dateCreated) {
 		super(address, email, identityCardNumber, name, phoneNumber);
 		this.cardID = cardID;
 		this.dateCreated = dateCreated;
-		this.m_Order = m_Order;
+		
 	}
 
 	public String getCardID() {
@@ -40,12 +39,5 @@ public class Card extends Information {
 		this.dateCreated = dateCreated;
 	}
 
-	public Order getM_Order() {
-		return m_Order;
-	}
-
-	public void setM_Order(Order m_Order) {
-		this.m_Order = m_Order;
-	}
-
+	
 }
