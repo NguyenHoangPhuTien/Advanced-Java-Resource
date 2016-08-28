@@ -92,51 +92,56 @@ public class MainSaleManagement {
 			
 			List<Order> listOrder = new ArrayList<Order>();
 			
+			int cont = 1;
+			while(cont == 1){
+				
+				System.out.println("Input date of order:");
+				String date = buff.readLine();
+				System.out.println("Input status of order:");
+				String status = buff.readLine();
+				boolean printTax;
+				System.out.println("1.Print order");
+				System.out.println("2.No print order");
+				System.out.println("Please choice 1 or 2");
+				
+				int choicePrint = Integer.parseInt(buff.readLine());
+				if(choicePrint == 1)
+					 printTax = true;
+				else
+					printTax = false;
+				List<OrderDetail> listOrderDetail = createListOrderDetail(buff);
+				System.out.println("1.ATM");
+				System.out.println("2.Credit card");
+				System.out.println("Please choice how to pay (1 or 2");
+				int payType = Integer.parseInt(buff.readLine());
+				if(payType == 1){
+					System.out.println("Input card ID: ");
+					String cardID = buff.readLine();
+					System.out.println("Input date created: ");
+					String dateCreate = buff.readLine();
+					System.out.println("Input balance of ATM: ");
+					double balance = Double.parseDouble(buff.readLine());
+					ATMCard atm = new ATMCard(address, email, identity, name, phone, cardID, dateCreate, balance);
+					Order order = new Order(date, status, listOrderDetail, printTax, atm);
+					listOrder.add(order);
+				}
+				else if(payType == 2){
+					System.out.println("Input card ID: ");
+					String cardID = buff.readLine();
+					System.out.println("Input date created: ");
+					String dateCreate = buff.readLine();
+					System.out.println("Input expiration date of credit card: ");
+					String expirationDate = buff.readLine();
+					System.out.println("Input max debt of credit card: ");
+					double maxDebt = Double.parseDouble(buff.readLine());
+					System.out.println("Input type of credit card: ");
+					String type = buff.readLine();
+					CreditCard creditCard = new CreditCard(address, email, identity, name, phone, cardID, dateCreate, expirationDate, maxDebt, type);
+					Order order = new Order(date, status, listOrderDetail, printTax, creditCard);
+					listOrder.add(order);
+				}
+			}
 			
-			System.out.println("Input date of order:");
-			String date = buff.readLine();
-			System.out.println("Input status of order:");
-			String status = buff.readLine();
-			System.out.println("1.Print order");
-			System.out.println("2.No print order");
-			System.out.println("Please choice 1 or 2");
-			boolean printTax;
-			int choicePrint = Integer.parseInt(buff.readLine());
-			if(choicePrint == 1)
-				 printTax = true;
-			else
-				printTax = false;
-			List<OrderDetail> listOrderDetail = createListOrderDetail(buff);
-			System.out.println("1.ATM");
-			System.out.println("2.Credit card");
-			System.out.println("Please choice how to pay (1 or 2");
-			int payType = Integer.parseInt(buff.readLine());
-			if(payType == 1){
-				System.out.println("Input card ID: ");
-				String cardID = buff.readLine();
-				System.out.println("Input date created: ");
-				String dateCreate = buff.readLine();
-				System.out.println("Input balance of ATM: ");
-				double balance = Double.parseDouble(buff.readLine());
-				ATMCard atm = new ATMCard(address, email, identity, name, phone, cardID, dateCreate, balance);
-				Order order = new Order(date, status, listOrderDetail, printTax, atm);
-				listOrder.add(order);
-			}
-			else if(payType == 2){
-				System.out.println("Input card ID: ");
-				String cardID = buff.readLine();
-				System.out.println("Input date created: ");
-				String dateCreate = buff.readLine();
-				System.out.println("Input expiration date of credit card: ");
-				String expirationDate = buff.readLine();
-				System.out.println("Input max debt of credit card: ");
-				double maxDebt = Double.parseDouble(buff.readLine());
-				System.out.println("Input type of credit card: ");
-				String type = buff.readLine();
-				CreditCard creditCard = new CreditCard(address, email, identity, name, phone, cardID, dateCreate, expirationDate, maxDebt, type);
-				Order order = new Order(date, status, listOrderDetail, printTax, creditCard);
-				listOrder.add(order);
-			}
 			
 		} catch (IOException | NumberFormatException | InputMismatchException e) {
 			System.out.println(e.getMessage());
