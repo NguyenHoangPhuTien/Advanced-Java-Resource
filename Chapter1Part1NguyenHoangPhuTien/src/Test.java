@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 
 public class Test {
 
@@ -10,9 +12,13 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] s = {2,3,4};
-		changeString(s);
-		System.out.println(Arrays.toString(s));
+		SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+		Date date = new Date();
+		System.out.println(format.format(date));
+		
+		boolean a = true;
+		if(a)
+			System.out.println("yess");
 	}
 
 }
