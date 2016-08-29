@@ -89,6 +89,8 @@ public class MainSaleManagement {
 			String name = buff.readLine();
 			System.out.println("Input phone number");
 			String phone = buff.readLine();
+			System.out.println("Input customer id: ");
+			String customerId = buff.readLine();
 			
 			List<Order> listOrder = new ArrayList<Order>();
 			
@@ -110,6 +112,11 @@ public class MainSaleManagement {
 				else
 					printTax = false;
 				List<OrderDetail> listOrderDetail = createListOrderDetail(buff);
+				
+				/*
+				 * Switch choice : ATM card or Credit card will created and Order will created
+				 * Finaly this order will added into list order and Customer wil created by this list order
+				 */
 				System.out.println("1.ATM");
 				System.out.println("2.Credit card");
 				System.out.println("Please choice how to pay (1 or 2");
@@ -140,8 +147,25 @@ public class MainSaleManagement {
 					Order order = new Order(date, status, listOrderDetail, printTax, creditCard);
 					listOrder.add(order);
 				}
+				else
+					System.out.println("Please choice 1 or 2");
+				System.out.println("1.Continue to create order");
+				System.out.println("2.Quit");
+				System.out.println("Please choice 1 or 2");
+				int choiceCont = Integer.parseInt(buff.readLine());
+				if(choiceCont != 1)
+					cont = 0;
 			}
-			
+			Customer  customer = new Customer(address, email, identity, name, phone, customerId, listOrder);
+			System.out.println(customer.getName());
+			System.out.println(customer.getAddress());
+			System.out.println(customer.getEmail());
+			System.out.println(customer.getIdentityCardNumber());
+			System.out.println(customer.getPhoneNumber());
+			List<Order> list = customer.getList();
+			for(Order order  : list){
+				System.out.println(order.toString());
+			}
 			
 		} catch (IOException | NumberFormatException | InputMismatchException e) {
 			System.out.println(e.getMessage());
