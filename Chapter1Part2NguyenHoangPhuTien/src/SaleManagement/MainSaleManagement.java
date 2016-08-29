@@ -11,6 +11,7 @@ public class MainSaleManagement {
 
 	/*
 	 * switch choice : product will created and Order detail will be created by product
+	 * Return Order detail
 	 */
 	public static OrderDetail createOrderDetail(int choiceProduct, BufferedReader buff) throws IOException{
 		
@@ -44,14 +45,14 @@ public class MainSaleManagement {
 		}
 		return orderDetail;
 	}
-	
+	/*
+	 * Create a product and create order detail by product
+	 * Finaly add ordetail into list order detail
+	 * Return list order detail
+	 */
 	public static List<OrderDetail> createListOrderDetail(BufferedReader buff) throws IOException{
 		
 		List<OrderDetail> listOrderDetail = new ArrayList<OrderDetail>();
-		/*
-		 * Create a product and create order detail by product
-		 * Finaly add ordetail into list order detail
-		 */
 		int contProduct = 1;
 		while(contProduct == 1){
 			System.out.println("1.Egg");
@@ -67,9 +68,6 @@ public class MainSaleManagement {
 			if(choiceCont != 1)
 				contProduct = 0;
 		}
-		/*
-		 * 
-		 */
 		return listOrderDetail;
 	}
 	
@@ -156,6 +154,9 @@ public class MainSaleManagement {
 				if(choiceCont != 1)
 					cont = 0;
 			}
+			/*
+			 * 
+			 */
 			Customer  customer = new Customer(address, email, identity, name, phone, customerId, listOrder);
 			System.out.println(customer.getName());
 			System.out.println(customer.getAddress());
@@ -165,6 +166,7 @@ public class MainSaleManagement {
 			List<Order> list = customer.getList();
 			for(Order order  : list){
 				System.out.println(order.toString());
+				System.out.println("---------------------------------------------");
 			}
 			
 		} catch (IOException | NumberFormatException | InputMismatchException e) {
