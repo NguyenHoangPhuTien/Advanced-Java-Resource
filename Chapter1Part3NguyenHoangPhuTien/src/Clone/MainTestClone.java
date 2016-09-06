@@ -9,15 +9,14 @@ public class MainTestClone {
 		Employee emp = (Employee) Cache.getHuman("1");
 		Management manage = (Management) Cache.getHuman("2");
 		
-		System.out.println(emp.getDepartment().getName());
-		System.out.println(manage.getDp().getName());
+		System.out.println(emp.getId());
 		
-		emp.getDepartment().setName("def");
+		emp.setId(3);
+		emp.setName("hau");
+		
 		Employee emp1 = (Employee) Cache.getHuman("1");
-		
-		System.out.println(emp.getDepartment().getName());
-		System.out.println(emp.getDepartment().getName());
-		System.out.println(manage.getDp().getName());
+		System.out.println(emp.getName());
+		System.out.println(emp1.getName());
 	}
 
 }

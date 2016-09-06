@@ -21,6 +21,7 @@ public class Cache {
 	     
 		 Employee emp = new Employee();
 		 emp.setId(1);
+		 emp.setName("tien");
 		 emp.setDepartment(new Department(1, "abc"));
 		 shapeMap.put("1", emp);
 	    
