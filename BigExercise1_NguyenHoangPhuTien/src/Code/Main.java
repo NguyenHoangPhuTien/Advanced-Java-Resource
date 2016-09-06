@@ -257,10 +257,10 @@ public class Main {
 				System.out.println("3.Print information of master teacher");
 				System.out.println("4.Print all mark table of all student");
 				System.out.println("5.Add new student");
-				System.out.println("6.Exit");
-				System.out.println("7.Search mark table by name of Student");
-				System.out.println("8.Search mark table by name of subject");
-				System.out.println("Please choice 1 or 2 or 3 or 4 or 5 or 6");
+				System.out.println("6.Search mark table by name of Student");
+				System.out.println("7.Search mark table by name of subject");
+				System.out.println("8.Exit");
+				System.out.println("Please choice 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8");
 				int choice = Integer.parseInt(input.readLine());
 				
 				switch(choice){
@@ -336,7 +336,7 @@ public class Main {
 						break;
 					
 					//Search by mark table by name of student
-					case 7:
+					case 6:
 						List<Student> listStudent_1 = gcs.getM_Student();
 						int i = 1;
 						for(Student student_1 : listStudent_1){
@@ -382,7 +382,7 @@ public class Main {
 						break;
 					
 					//Search mark table by name of subject
-					case 8:
+					case 7:
 						List<Subject> listSubjects = gcs.getListSubject();
 						int k = 1;
 						for(Subject subject : listSubjects){
@@ -428,7 +428,7 @@ public class Main {
 						break;
 						
 					//Exit application
-					case 6:
+					case 8:
 						cont = 0;
 						break;
 					default:
