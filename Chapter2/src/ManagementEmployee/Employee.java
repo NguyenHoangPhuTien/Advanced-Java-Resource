@@ -1,27 +1,27 @@
 package ManagementEmployee;
 
-/*
- * Nguyen Hoang Phu Tien
- * Version : 1.0
- * Date : 7/9/2016
- * Class about information Employee
+/**
+ * 
+ * @author Nguyen Hoang Phu Tien
+ * date: 8/9/2016
+ * @version : 1.0
+ * --------------------------
+ * create class Employee to manage class
  */
-
 public class Employee {
-
-	String name;
-	int age;
-	double salary;
+	private String name;
+	private int age;
+	private String placeOfBirth;
 	
 	public Employee() {
 		super();
 	}
 
-	public Employee(String name, int age, double salary) {
+	public Employee(String name, int age, String placeOfBirth) {
 		super();
 		this.name = name;
 		this.age = age;
-		this.salary = salary;
+		this.placeOfBirth = placeOfBirth;
 	}
 
 	public String getName() {
@@ -40,18 +40,22 @@ public class Employee {
 		this.age = age;
 	}
 
-	public double getSalary() {
-		return salary;
+	public String getPlaceOfBirth() {
+		return placeOfBirth;
 	}
 
-	public void setSalary(double salary) {
-		this.salary = salary;
+	public void setPlaceOfBirth(String placeOfBirth) {
+		this.placeOfBirth = placeOfBirth;
 	}
 	
 	/*
-	 * Display information of employee
+	 * Show full information of employee
 	 */
-	public void displayEmployee(){
-		System.out.println("Name of employee: " + name + " age: " + age + " salary: " + salary);
+	public void show(){
+		System.out.println("---------------------------------");
+		System.out.println("name: " + name);
+		System.out.println("age: " + age);
+		System.out.println("place of birth: " + placeOfBirth);
+		System.out.println("---------------------------------");
 	}
 }
