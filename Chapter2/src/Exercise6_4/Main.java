@@ -31,11 +31,13 @@ public class Main {
 	public static List<Employee> readFile(){
 		List<Employee> list = new ArrayList<Employee>();
 		try {
+			Employee e = null;
 			ObjectInputStream in = new ObjectInputStream(new FileInputStream("src/Exercise6_4/database.txt"));
-			while(in.available() > 0){
-				Employee e = (Employee) in.readObject();
+			while((e = (Employee) in.readObject()) != null){
+				e = (Employee) in.readObject();
 				list.add(e);
 			}
+			in.close();
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		} catch (ClassNotFoundException e) {
