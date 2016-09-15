@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<contacts>
+  <contact>
+    <name>tien</name>
+    <phone>09090909</phone>
+  </contact>
+  <contact>
+    <name>hau</name>
+    <phone>090909091111</phone>
+  </contact>
+  <contact>
+    <name>tu</name>
+    <phone>123456789</phone>
+  </contact>
+  <contact>
+    <name>Mom</name>
+    <phone>456789</phone>
+  </contact>
+</contacts>
