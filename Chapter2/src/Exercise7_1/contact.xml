@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <contacts>
   <contact>
-    <name>tien</name>
-    <phone>09090909</phone>
-  </contact>
-  <contact>
     <name>hau</name>
     <phone>090909091111</phone>
   </contact>
@@ -13,7 +9,15 @@
     <phone>123456789</phone>
   </contact>
   <contact>
-    <name>Mom</name>
-    <phone>456789</phone>
+    <name>mom</name>
+    <phone>77777777</phone>
+  </contact>
+  <contact>
+    <name>tien</name>
+    <phone>0123456789</phone>
+  </contact>
+  <contact>
+    <name>tiejn1</name>
+    <phone>456</phone>
   </contact>
 </contacts>
