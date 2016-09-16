@@ -1,4 +1,4 @@
-package Exercise8_2_8_3_8_4;
+package Exercise8_2_8_3_8_4_8_5;
 
 /*
  * Author: Nguyen Hoang Phu Tien
@@ -74,5 +74,12 @@ public class Product {
 	public void setCategoryID(int categoryID) {
 		this.categoryID = categoryID;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", amount=" + amount + ", categoryID="
+				+ categoryID + "]";
+	}
+	
 	
 }

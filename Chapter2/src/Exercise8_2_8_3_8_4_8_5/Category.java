@@ -1,4 +1,4 @@
-package Exercise8_2_8_3_8_4;
+package Exercise8_2_8_3_8_4_8_5;
 
 /*
  * Author: Nguyen Hoang Phu Tien
@@ -54,5 +54,15 @@ public class Category {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	/*
+	 * Get information of category
+	 * Return result as a String
+	 */
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", name=" + name + ", description=" + description + "]";
+	}
+	
 	
 }
