@@ -105,5 +105,4 @@ public class Product {
 				+ ", categoryID=" + categoryID + ", date=" + date + ", onSell=" + onSell + "]";
 	}
 	
-	
 }
