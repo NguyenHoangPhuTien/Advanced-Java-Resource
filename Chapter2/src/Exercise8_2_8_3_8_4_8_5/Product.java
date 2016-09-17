@@ -18,6 +18,7 @@ public class Product {
 		super();
 	}
 
+	
 	public Product(int id, String name, double price, int amount, int categoryID) {
 		super();
 		this.id = id;

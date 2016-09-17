@@ -40,4 +40,47 @@ public class ProductController {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	/*
+	 * Update product by id
+	 * param: id of product want to update, price and amount want to update
+	 */
+	public void updateProduct(int id, double price, int amount){
+		
+		
+		try(Connection con = data.connect()){
+			
+			String sql = "UPDATE `product` SET `price`= ?,`amount`= ?  WHERE id = ?";
+			PreparedStatement prepare = con.prepareStatement(sql);
+			prepare.setDouble(1, price);
+			prepare.setInt(2, amount);
+			prepare.setInt(3, id);
+			
+			prepare.execute();
+			con.close();
+			
+			System.out.println("Update success!!!!!");
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e.getMessage());
+		}
+		
+	}
+	
+	/*
+	 * Delete product in database
+	 * param: id of product want to delete
+	 */
+	public void deleteProduct(int id){
+		
+		try(Connection con = data.connect()){
+			String sql = "DELETE FROM `product` WHERE id = ?";
+			PreparedStatement pre = con.prepareStatement(sql);
+			pre.setInt(1, id);
+			pre.execute();
+			con.close();
+			System.out.println("Delete success!!!!");
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e.getMessage());
+		}
+	}
 }

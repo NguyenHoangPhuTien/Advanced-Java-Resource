@@ -22,6 +22,18 @@ public class Product {
 	public Product() {
 		super();
 	}
+	
+	public Product(String name, double price, int amount, String image, int categoryID, Date date, int onSell) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.amount = amount;
+		this.image = image;
+		this.categoryID = categoryID;
+		this.date = date;
+		this.onSell = onSell;
+	}
+
 
 	public Product(int id, String name, double price, int amount, String image, int categoryID, Date date, int onSell) {
 		super();
