@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CDs>
+  <CD>
+    <id>1</id>
+    <name>tinh em</name>
+    <singer>minh thuan</singer>
+    <numbersongs>10</numbersongs>
+    <price>20000.0</price>
+  </CD>
+  <CD>
+    <id>2</id>
+    <name>tinh anh</name>
+    <singer>dan truong</singer>
+    <numbersongs>15</numbersongs>
+    <price>30000.0</price>
+  </CD>
+</CDs>
